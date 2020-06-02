@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmnls:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    android:layout_width="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="Q+id/recycler_view_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="Q+id/edit_text_message"
+        app:LayoutManager="LinearLayoutManager"/>
+
+    <EditText
+        app:layout_width="match_parent"
+        app:layout_height="wrap_content"
+        android:id="Q+id/edit_text_message"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@Qdimen/margin_small"
+        android:background="@drawable/common_google_signin_btn_text_dark"/>
+
+</RelativeLayout>
